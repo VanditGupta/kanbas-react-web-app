@@ -131,12 +131,12 @@ Your favorite books (in no particular order)
   <img id="wd-starship"
     width="400px"
     src="https://www.staradvertiser.com/wp-content/uploads/2021/08/web1_Starship-gap2.jpg"
-    alt="Starship image from the internet"
+    alt="Starship from the internet"
   />
   <br />
   Loading a local image:
   <br />
-  <img id="wd-teslabot" src="images/teslabot.jpg" height="200px" alt="Local image of Tesla Bot" />
+  <img id="wd-teslabot" src="images/teslabot.jpg" height="200px" alt="Tesla Bot" />
 </div>
 
 <div id="wd-forms">
