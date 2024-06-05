@@ -1,4 +1,5 @@
 import "./index.css";
+import ReactIconSampler from "./ReactIconSampler"; 
 export default function Lab2() {
   return (
     <div id="wd-lab2">
@@ -295,6 +296,9 @@ This heading has same style as paragraph above
   </div>
 </div>
 
+
+
+<ReactIconSampler />
 
 
 
