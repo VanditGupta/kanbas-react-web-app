@@ -179,62 +179,65 @@ export default function Dashboard() {
           </div>
 
           <div className="wd-dashboard-course col" style={{ width: "300px" }}>
-        <div className="card">
-          <img src="/images/javascript.jpg" alt="JavaScript Course" />
-          <div className="card-body">
-            <a
-              className="wd-dashboard-course-link"
-              href="#/Kanbas/Courses/1240/Home"
-              style={{
-                textDecoration: "none",
-                color: "navy",
-                fontWeight: "bold",
-              }}
-            >
-              CS1240 JavaScript
-            </a>
-            <p className="wd-dashboard-course-title card-text">
-              JavaScript for Beginners Course with Projects
-            </p>
-            <a
-              href="#/Kanbas/Courses/1240/Home"
-              className="btn btn-primary"
-            >
-              Go
-            </a>
+            <div className="card">
+              <img src="/images/javascript.jpg" alt="JavaScript Course" />
+              <div className="card-body">
+                <a
+                  className="wd-dashboard-course-link"
+                  href="#/Kanbas/Courses/1240/Home"
+                  style={{
+                    textDecoration: "none",
+                    color: "navy",
+                    fontWeight: "bold",
+                  }}
+                >
+                  CS1240 JavaScript
+                </a>
+                <p className="wd-dashboard-course-title card-text">
+                  JavaScript for Beginners Course with Projects
+                </p>
+                <a
+                  href="#/Kanbas/Courses/1240/Home"
+                  className="btn btn-primary"
+                >
+                  Go
+                </a>
+              </div>
+            </div>
           </div>
-        </div>
-      </div>
 
-      <div className="wd-dashboard-course col" style={{ width: "300px" }}>
-        <div className="card">
-          <img src="/images/cloudcomputing.jpg" alt="Cloud Computing Course" />
-          <div className="card-body">
-            <a
-              className="wd-dashboard-course-link"
-              href="#/Kanbas/Courses/1241/Home"
-              style={{
-                textDecoration: "none",
-                color: "navy",
-                fontWeight: "bold",
-              }}
-            >
-              CS1241 Cloud Computing
-            </a>
-            <p className="wd-dashboard-course-title card-text">
-              Introduction to Cloud Computing using AWS
-            </p>
-            <a
-              href="#/Kanbas/Courses/1241/Home"
-              className="btn btn-primary"
-            >
-              Go
-            </a>
-                </div>
+          <div className="wd-dashboard-course col" style={{ width: "300px" }}>
+            <div className="card">
+              <img
+                src="/images/cloudcomputing.jpg"
+                alt="Cloud Computing Course"
+              />
+              <div className="card-body">
+                <a
+                  className="wd-dashboard-course-link"
+                  href="#/Kanbas/Courses/1241/Home"
+                  style={{
+                    textDecoration: "none",
+                    color: "navy",
+                    fontWeight: "bold",
+                  }}
+                >
+                  CS1241 Cloud Computing
+                </a>
+                <p className="wd-dashboard-course-title card-text">
+                  Introduction to Cloud Computing using AWS
+                </p>
+                <a
+                  href="#/Kanbas/Courses/1241/Home"
+                  className="btn btn-primary"
+                >
+                  Go
+                </a>
               </div>
             </div>
           </div>
         </div>
       </div>
+    </div>
   );
 }
