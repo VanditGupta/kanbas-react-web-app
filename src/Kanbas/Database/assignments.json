@@ -1,170 +1,194 @@
 [
-    {
-      "_id": "A401",
-      "title": "React Components Assignment",
-      "course": "CS1234",
-      "availableDate": "May 6",
-      "dueDate": "May 13"
-    },
-    {
-      "_id": "A402",
-      "title": "State and Props Quiz",
-      "course": "CS1234",
-      "availableDate": "May 13",
-      "dueDate": "May 20"
-    },
-    {
-      "_id": "A403",
-      "title": "React Project",
-      "course": "CS1234",
-      "availableDate": "May 20",
-      "dueDate": "May 27"
-    },
-    {
-      "_id": "A501",
-      "title": "Node.js Basics Assignment",
-      "course": "CS1235",
-      "availableDate": "May 6",
-      "dueDate": "May 13"
-    },
-    {
-      "_id": "A502",
-      "title": "REST API Development",
-      "course": "CS1235",
-      "availableDate": "May 13",
-      "dueDate": "May 20"
-    },
-    {
-      "_id": "A503",
-      "title": "Middleware Integration",
-      "course": "CS1235",
-      "availableDate": "May 20",
-      "dueDate": "May 27"
-    },
-    {
-      "_id": "A601",
-      "title": "Python Syntax Assignment",
-      "course": "CS1236",
-      "availableDate": "May 6",
-      "dueDate": "May 13"
-    },
-    {
-      "_id": "A602",
-      "title": "Data Structures Quiz",
-      "course": "CS1236",
-      "availableDate": "May 13",
-      "dueDate": "May 20"
-    },
-    {
-      "_id": "A603",
-      "title": "Python Project",
-      "course": "CS1236",
-      "availableDate": "May 20",
-      "dueDate": "May 27"
-    },
-    {
-      "_id": "A701",
-      "title": "Supervised Learning Assignment",
-      "course": "CS1237",
-      "availableDate": "May 6",
-      "dueDate": "May 13"
-    },
-    {
-      "_id": "A702",
-      "title": "Model Evaluation Quiz",
-      "course": "CS1237",
-      "availableDate": "May 13",
-      "dueDate": "May 20"
-    },
-    {
-      "_id": "A703",
-      "title": "Machine Learning Project",
-      "course": "CS1237",
-      "availableDate": "May 20",
-      "dueDate": "May 27"
-    },
-    {
-      "_id": "A801",
-      "title": "SQL Queries Assignment",
-      "course": "CS1238",
-      "availableDate": "May 6",
-      "dueDate": "May 13"
-    },
-    {
-      "_id": "A802",
-      "title": "Database Design Quiz",
-      "course": "CS1238",
-      "availableDate": "May 13",
-      "dueDate": "May 20"
-    },
-    {
-      "_id": "A803",
-      "title": "Advanced SQL Project",
-      "course": "CS1238",
-      "availableDate": "May 20",
-      "dueDate": "May 27"
-    },
-    {
-      "_id": "A901",
-      "title": "HTML Structure Assignment",
-      "course": "CS1239",
-      "availableDate": "May 6",
-      "dueDate": "May 13"
-    },
-    {
-      "_id": "A902",
-      "title": "CSS Styling Quiz",
-      "course": "CS1239",
-      "availableDate": "May 13",
-      "dueDate": "May 20"
-    },
-    {
-      "_id": "A903",
-      "title": "Responsive Design Project",
-      "course": "CS1239",
-      "availableDate": "May 20",
-      "dueDate": "May 27"
-    },
-    {
-      "_id": "A1001",
-      "title": "JavaScript Basics Assignment",
-      "course": "CS1240",
-      "availableDate": "May 6",
-      "dueDate": "May 13"
-    },
-    {
-      "_id": "A1002",
-      "title": "DOM Manipulation Quiz",
-      "course": "CS1240",
-      "availableDate": "May 13",
-      "dueDate": "May 20"
-    },
-    {
-      "_id": "A1003",
-      "title": "JavaScript Project",
-      "course": "CS1240",
-      "availableDate": "May 20",
-      "dueDate": "May 27"
-    },
-    {
-      "_id": "A1101",
-      "title": "AWS Setup Assignment",
-      "course": "CS1241",
-      "availableDate": "May 6",
-      "dueDate": "May 13"
-    },
-    {
-      "_id": "A1102",
-      "title": "Cloud Security Quiz",
-      "course": "CS1241",
-      "availableDate": "May 13",
-      "dueDate": "May 20"
-    },
-    {
-      "_id": "A1103",
-      "title": "Cloud Computing Project",
-      "course": "CS1241",
-      "availableDate": "May 20",
-      "dueDate": "May 27"
-    }
-  ]
+  {
+    "_id": "A401",
+    "title": "React Components Assignment",
+    "course": "CS1234",
+    "availableDate": "May 6",
+    "dueDate": "May 13",
+    "description": "Create and render reusable React components."
+  },
+  {
+    "_id": "A402",
+    "title": "State and Props Quiz",
+    "course": "CS1234",
+    "availableDate": "May 13",
+    "dueDate": "May 20",
+    "description": "Quiz on managing state and props in React components."
+  },
+  {
+    "_id": "A403",
+    "title": "React Project",
+    "course": "CS1234",
+    "availableDate": "May 20",
+    "dueDate": "May 27",
+    "description": "Develop a small project using React to demonstrate component composition."
+  },
+  {
+    "_id": "A501",
+    "title": "Node.js Basics Assignment",
+    "course": "CS1235",
+    "availableDate": "May 6",
+    "dueDate": "May 13",
+    "description": "Introduction to Node.js with basic server setup."
+  },
+  {
+    "_id": "A502",
+    "title": "REST API Development",
+    "course": "CS1235",
+    "availableDate": "May 13",
+    "dueDate": "May 20",
+    "description": "Build a RESTful API using Node.js and Express."
+  },
+  {
+    "_id": "A503",
+    "title": "Middleware Integration",
+    "course": "CS1235",
+    "availableDate": "May 20",
+    "dueDate": "May 27",
+    "description": "Integrate middleware for handling authentication and error handling in Node.js."
+  },
+  {
+    "_id": "A601",
+    "title": "Python Syntax Assignment",
+    "course": "CS1236",
+    "availableDate": "May 6",
+    "dueDate": "May 13",
+    "description": "Practice basic Python syntax and data structures."
+  },
+  {
+    "_id": "A602",
+    "title": "Data Structures Quiz",
+    "course": "CS1236",
+    "availableDate": "May 13",
+    "dueDate": "May 20",
+    "description": "Quiz on Python data structures such as lists, dictionaries, and sets."
+  },
+  {
+    "_id": "A603",
+    "title": "Python Project",
+    "course": "CS1236",
+    "availableDate": "May 20",
+    "dueDate": "May 27",
+    "description": "Develop a small project using Python, showcasing its capabilities."
+  },
+  {
+    "_id": "A701",
+    "title": "Supervised Learning Assignment",
+    "course": "CS1237",
+    "availableDate": "May 6",
+    "dueDate": "May 13",
+    "description": "Implement basic supervised learning algorithms using Python."
+  },
+  {
+    "_id": "A702",
+    "title": "Model Evaluation Quiz",
+    "course": "CS1237",
+    "availableDate": "May 13",
+    "dueDate": "May 20",
+    "description": "Quiz on model evaluation techniques such as cross-validation and confusion matrix."
+  },
+  {
+    "_id": "A703",
+    "title": "Machine Learning Project",
+    "course": "CS1237",
+    "availableDate": "May 20",
+    "dueDate": "May 27",
+    "description": "Develop a machine learning project using a dataset of your choice."
+  },
+  {
+    "_id": "A801",
+    "title": "SQL Queries Assignment",
+    "course": "CS1238",
+    "availableDate": "May 6",
+    "dueDate": "May 13",
+    "description": "Write SQL queries to retrieve and manipulate data."
+  },
+  {
+    "_id": "A802",
+    "title": "Database Design Quiz",
+    "course": "CS1238",
+    "availableDate": "May 13",
+    "dueDate": "May 20",
+    "description": "Quiz on database design principles and normalization."
+  },
+  {
+    "_id": "A803",
+    "title": "Advanced SQL Project",
+    "course": "CS1238",
+    "availableDate": "May 20",
+    "dueDate": "May 27",
+    "description": "Develop a project using advanced SQL queries and database design techniques."
+  },
+  {
+    "_id": "A901",
+    "title": "HTML Structure Assignment",
+    "course": "CS1239",
+    "availableDate": "May 6",
+    "dueDate": "May 13",
+    "description": "Create a well-structured HTML document."
+  },
+  {
+    "_id": "A902",
+    "title": "CSS Styling Quiz",
+    "course": "CS1239",
+    "availableDate": "May 13",
+    "dueDate": "May 20",
+    "description": "Quiz on CSS styling techniques and best practices."
+  },
+  {
+    "_id": "A903",
+    "title": "Responsive Design Project",
+    "course": "CS1239",
+    "availableDate": "May 20",
+    "dueDate": "May 27",
+    "description": "Create a responsive web design project using HTML and CSS."
+  },
+  {
+    "_id": "A1001",
+    "title": "JavaScript Basics Assignment",
+    "course": "CS1240",
+    "availableDate": "May 6",
+    "dueDate": "May 13",
+    "description": "Introduction to JavaScript with basic programming exercises."
+  },
+  {
+    "_id": "A1002",
+    "title": "DOM Manipulation Quiz",
+    "course": "CS1240",
+    "availableDate": "May 13",
+    "dueDate": "May 20",
+    "description": "Quiz on manipulating the DOM using JavaScript."
+  },
+  {
+    "_id": "A1003",
+    "title": "JavaScript Project",
+    "course": "CS1240",
+    "availableDate": "May 20",
+    "dueDate": "May 27",
+    "description": "Develop a small project using JavaScript to demonstrate dynamic web content."
+  },
+  {
+    "_id": "A1101",
+    "title": "AWS Setup Assignment",
+    "course": "CS1241",
+    "availableDate": "May 6",
+    "dueDate": "May 13",
+    "description": "Setup an AWS environment for deploying applications."
+  },
+  {
+    "_id": "A1102",
+    "title": "Cloud Security Quiz",
+    "course": "CS1241",
+    "availableDate": "May 13",
+    "dueDate": "May 20",
+    "description": "Quiz on cloud security principles and best practices."
+  },
+  {
+    "_id": "A1103",
+    "title": "Cloud Computing Project",
+    "course": "CS1241",
+    "availableDate": "May 20",
+    "dueDate": "May 27",
+    "description": "Develop a cloud computing project using AWS services."
+  }
+]
