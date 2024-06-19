@@ -1,0 +1,92 @@
+[
+    {
+        "_id": "121",
+        "username": "jane_adams",
+        "password": "stark123",
+        "firstName": "Jane",
+        "lastName": "Adams",
+        "email": "jane.adams@gmail.com",
+        "dob": "1999-05-29",
+        "role": "STUDENT"
+    },
+    {
+        "_id": "122",
+        "username": "christina_allen",
+        "password": "wayne123",
+        "firstName": "Christina",
+        "lastName": "Allen",
+        "email": "christina.allen@gmail.com",
+        "dob": "2000-02-19",
+        "role": "STUDENT"
+    },
+    {
+        "_id": "123",
+        "username": "samreen_ansari",
+        "password": "rogers123",
+        "firstName": "Samreen",
+        "lastName": "Ansari",
+        "email": "samreen.ansari@gmail.com",
+        "dob": "2001-07-04",
+        "role": "STUDENT"
+    },
+    {
+        "_id": "124",
+        "username": "han_bao",
+        "password": "romanoff123",
+        "firstName": "Han",
+        "lastName": "Bao",
+        "email": "han.bao@gmail.com",
+        "dob": "1997-11-22",
+        "role": "STUDENT"
+    },
+    {
+        "_id": "125",
+        "username": "mahi_sai_srinivas_bobbili",
+        "password": "mjolnir123",
+        "firstName": "Mahi Sai Srinivas",
+        "lastName": "Bobbili",
+        "email": "mahi.sai@gmail.com",
+        "dob": "1998-05-25",
+        "role": "STUDENT"
+    },
+    {
+        "_id": "126",
+        "username": "siran_cao",
+        "password": "banner123",
+        "firstName": "Siran",
+        "lastName": "Cao",
+        "email": "siran.cao@gmail.com",
+        "dob": "1999-12-18",
+        "role": "STUDENT"
+    },
+    {
+        "_id": "127",
+        "username": "ring_bearer",
+        "password": "shire123",
+        "firstName": "Frodo",
+        "lastName": "Baggins",
+        "email": "frodo@gmail.com",
+        "dob": "1972-09-22",
+        "role": "FACULTY"
+    },
+    {
+        "_id": "128",
+        "username": "strider",
+        "password": "aragorn123",
+        "firstName": "Aragorn",
+        "lastName": "Elessar",
+        "email": "aragorn@gmail.com",
+        "dob": "1975-03-01",
+        "role": "FACULTY"
+    },
+    {
+        "_id": "129",
+        "username": "elf_archer",
+        "password": "legolas123",
+        "firstName": "Legolas",
+        "lastName": "Greenleaf",
+        "email": "legolas@gmail.com",
+        "dob": "1967-07-15",
+        "role": "FACULTY"
+    }
+]

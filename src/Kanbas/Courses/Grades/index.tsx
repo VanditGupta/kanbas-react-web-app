@@ -6,13 +6,7 @@ import {
   FaSearch,
   FaChevronDown,
 } from "react-icons/fa";
-import {
-  Table,
-  InputGroup,
-  FormControl,
-  Button,
-  Dropdown,
-} from "react-bootstrap";
+import { Table, InputGroup, FormControl, Button } from "react-bootstrap";
 
 export default function Grades() {
   return (
@@ -73,46 +67,6 @@ export default function Grades() {
           >
             <FaCog />
           </Button>
-        </div>
-      </div>
-
-      <div className="mb-3"></div>
-
-
-      <div className="d-flex">
-        <div className="me-3">
-          <label>
-            <b>Student Names</b>
-          </label>
-          <InputGroup>
-            <Button variant="outline-secondary">
-              <FaSearch />
-            </Button>
-            <FormControl
-              placeholder="Search Students"
-              className="form-control"
-            />
-            <Button variant="outline-secondary">
-              <FaChevronDown />
-            </Button>
-          </InputGroup>
-        </div>
-        <div>
-          <label>
-            <b>Assignment Names</b>
-          </label>
-          <InputGroup>
-            <Button variant="outline-secondary">
-              <FaSearch />
-            </Button>
-            <FormControl
-              placeholder="Search Assignments"
-              className="form-control"
-            />
-            <Button variant="outline-secondary">
-              <FaChevronDown />
-            </Button>
-          </InputGroup>
         </div>
       </div>
 
