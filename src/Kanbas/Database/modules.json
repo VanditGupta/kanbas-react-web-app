@@ -1,0 +1,258 @@
+[
+    {
+      "_id": "CS1234",
+      "name": "Week 1 - Course Introduction, Syllabus, Agenda",
+      "description": "Overview of the course, syllabus, and agenda.",
+      "course": "CS1234",
+      "lessons": [
+        {
+          "_id": "L101",
+          "name": "Introduction to React",
+          "description": "Basic concepts and setup for React JS.",
+          "module": "CS1234"
+        },
+        {
+          "_id": "L102",
+          "name": "React Overview",
+          "description": "An overview of React and its features.",
+          "module": "CS1234"
+        },
+        {
+          "_id": "L103",
+          "name": "Setting Up React",
+          "description": "Setting up a React development environment.",
+          "module": "CS1234"
+        },
+        {
+          "_id": "L104",
+          "name": "JSX and Components",
+          "description": "Introduction to JSX and React components.",
+          "module": "CS1234"
+        }
+      ]
+    },
+    {
+      "_id": "CS1235",
+      "name": "Week 1 - Course Introduction, Syllabus, Agenda",
+      "description": "Overview of the course, syllabus, and agenda.",
+      "course": "CS1235",
+      "lessons": [
+        {
+          "_id": "L201",
+          "name": "Introduction to Node.js",
+          "description": "Basic concepts and setup for Node.js.",
+          "module": "CS1235"
+        },
+        {
+          "_id": "L202",
+          "name": "Node.js Overview",
+          "description": "An overview of Node.js and its features.",
+          "module": "CS1235"
+        },
+        {
+          "_id": "L203",
+          "name": "Setting Up Node.js",
+          "description": "Installing and setting up Node.js.",
+          "module": "CS1235"
+        },
+        {
+          "_id": "L204",
+          "name": "Building a Simple Server",
+          "description": "Building a simple server with Node.js.",
+          "module": "CS1235"
+        }
+      ]
+    },
+    {
+      "_id": "CS1236",
+      "name": "Week 1 - Course Introduction, Syllabus, Agenda",
+      "description": "Overview of the course, syllabus, and agenda.",
+      "course": "CS1236",
+      "lessons": [
+        {
+          "_id": "L301",
+          "name": "Introduction to Python",
+          "description": "Basic concepts and setup for Python programming.",
+          "module": "CS1236"
+        },
+        {
+          "_id": "L302",
+          "name": "Python Overview",
+          "description": "An overview of Python and its features.",
+          "module": "CS1236"
+        },
+        {
+          "_id": "L303",
+          "name": "Setting Up Python",
+          "description": "Installing and setting up Python.",
+          "module": "CS1236"
+        },
+        {
+          "_id": "L304",
+          "name": "Basic Python Syntax",
+          "description": "Understanding basic Python syntax.",
+          "module": "CS1236"
+        }
+      ]
+    },
+    {
+      "_id": "CS1237",
+      "name": "Week 1 - Course Introduction, Syllabus, Agenda",
+      "description": "Overview of the course, syllabus, and agenda.",
+      "course": "CS1237",
+      "lessons": [
+        {
+          "_id": "L401",
+          "name": "Introduction to Machine Learning",
+          "description": "Understanding the basics of machine learning.",
+          "module": "CS1237"
+        },
+        {
+          "_id": "L402",
+          "name": "Machine Learning Overview",
+          "description": "An overview of machine learning concepts and applications.",
+          "module": "CS1237"
+        },
+        {
+          "_id": "L403",
+          "name": "Supervised Learning",
+          "description": "Introduction to supervised learning algorithms.",
+          "module": "CS1237"
+        },
+        {
+          "_id": "L404",
+          "name": "Unsupervised Learning",
+          "description": "Introduction to unsupervised learning algorithms.",
+          "module": "CS1237"
+        }
+      ]
+    },
+    {
+      "_id": "CS1238",
+      "name": "Week 1 - Course Introduction, Syllabus, Agenda",
+      "description": "Overview of the course, syllabus, and agenda.",
+      "course": "CS1238",
+      "lessons": [
+        {
+          "_id": "L501",
+          "name": "Introduction to Databases",
+          "description": "An overview of databases and their types.",
+          "module": "CS1238"
+        },
+        {
+          "_id": "L502",
+          "name": "Database Fundamentals",
+          "description": "Understanding database design and management.",
+          "module": "CS1238"
+        },
+        {
+          "_id": "L503",
+          "name": "SQL Basics",
+          "description": "Introduction to SQL and basic queries.",
+          "module": "CS1238"
+        },
+        {
+          "_id": "L504",
+          "name": "Database Design",
+          "description": "Principles of database design.",
+          "module": "CS1238"
+        }
+      ]
+    },
+    {
+      "_id": "CS1239",
+      "name": "Week 1 - Course Introduction, Syllabus, Agenda",
+      "description": "Overview of the course, syllabus, and agenda.",
+      "course": "CS1239",
+      "lessons": [
+        {
+          "_id": "L601",
+          "name": "Introduction to HTML & CSS",
+          "description": "Basic concepts of HTML and CSS for web development.",
+          "module": "CS1239"
+        },
+        {
+          "_id": "L602",
+          "name": "HTML Overview",
+          "description": "Basic structure and elements of HTML.",
+          "module": "CS1239"
+        },
+        {
+          "_id": "L603",
+          "name": "CSS Overview",
+          "description": "Basic concepts of CSS for styling web pages.",
+          "module": "CS1239"
+        },
+        {
+          "_id": "L604",
+          "name": "Responsive Design",
+          "description": "Creating responsive web designs with CSS.",
+          "module": "CS1239"
+        }
+      ]
+    },
+    {
+      "_id": "CS1240",
+      "name": "Week 1 - Course Introduction, Syllabus, Agenda",
+      "description": "Overview of the course, syllabus, and agenda.",
+      "course": "CS1240",
+      "lessons": [
+        {
+          "_id": "L701",
+          "name": "Introduction to JavaScript",
+          "description": "Basic concepts and setup for JavaScript programming.",
+          "module": "CS1240"
+        },
+        {
+          "_id": "L702",
+          "name": "JavaScript Overview",
+          "description": "Understanding the basics of JavaScript.",
+          "module": "CS1240"
+        },
+        {
+          "_id": "L703",
+          "name": "JavaScript Syntax",
+          "description": "Basic syntax and features of JavaScript.",
+          "module": "CS1240"
+        },
+        {
+          "_id": "L704",
+          "name": "JavaScript DOM Manipulation",
+          "description": "Manipulating the DOM using JavaScript.",
+          "module": "CS1240"
+        }
+      ]
+    },
+    {
+      "_id": "CS1241",
+      "name": "Week 1 - Course Introduction, Syllabus, Agenda",
+      "description": "Overview of the course, syllabus, and agenda.",
+      "course": "CS1241",
+      "lessons": [
+        {
+          "_id": "L801",
+          "name": "Introduction to Cloud Computing",
+          "description": "Basics of cloud computing and AWS.",
+          "module": "CS1241"
+        },
+        {
+          "_id": "L802",
+          "name": "Cloud Computing Overview",
+          "description": "Introduction to cloud computing concepts.",
+          "module": "CS1241"
+        },
+        {
+          "_id": "L803",
+          "name": "AWS Basics",
+          "description": "Getting started with AWS services.",
+          "module": "CS1241"
+        },
+        {
+          "_id": "L804",
+          "name": "Deploying Applications on AWS",
+          "description": "Deploying web applications on AWS.",
+          "module": "CS1241"
+        }
+      ]
+    }
+  ]
