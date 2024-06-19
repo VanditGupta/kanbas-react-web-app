@@ -3,11 +3,11 @@ export default function AddingAndRemovingToFromArrays() {
   let stringArray1 = ["string1", "string2"];
   let todoArray = [<li key="1">Buy milk</li>, <li key="2">Feed the pets</li>];
 
-  numberArray1.push(6); // adding new items
+  numberArray1.push(6);
   stringArray1.push("string3");
   todoArray.push(<li key="3">Walk the dogs</li>);
 
-  numberArray1.splice(2, 1); // remove 1 item starting at 2
+  numberArray1.splice(2, 1);
   stringArray1.splice(1, 1);
 
   return (
