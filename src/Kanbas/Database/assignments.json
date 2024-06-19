@@ -5,7 +5,8 @@
     "course": "CS1234",
     "availableDate": "May 6",
     "dueDate": "May 13",
-    "description": "Create and render reusable React components."
+    "availableUntil": "May 14",
+    "description": "Create and render reusable React components. This assignment focuses on the fundamental concepts of creating and managing React components, including state and props, and how to pass data between them."
   },
   {
     "_id": "A402",
@@ -13,7 +14,8 @@
     "course": "CS1234",
     "availableDate": "May 13",
     "dueDate": "May 20",
-    "description": "Quiz on managing state and props in React components."
+    "availableUntil": "May 21",
+    "description": "Test your understanding of state and props in React. This quiz covers key concepts such as state management, prop drilling, and the use of functional and class components."
   },
   {
     "_id": "A403",
@@ -21,7 +23,8 @@
     "course": "CS1234",
     "availableDate": "May 20",
     "dueDate": "May 27",
-    "description": "Develop a small project using React to demonstrate component composition."
+    "availableUntil": "May 28",
+    "description": "Develop a full-fledged React application. This project combines everything you've learned about React, including components, state, props, and routing, into a comprehensive application."
   },
   {
     "_id": "A501",
@@ -29,7 +32,8 @@
     "course": "CS1235",
     "availableDate": "May 6",
     "dueDate": "May 13",
-    "description": "Introduction to Node.js with basic server setup."
+    "availableUntil": "May 14",
+    "description": "Learn the basics of Node.js. This assignment covers fundamental Node.js concepts such as module system, asynchronous programming, and building simple HTTP servers."
   },
   {
     "_id": "A502",
@@ -37,7 +41,8 @@
     "course": "CS1235",
     "availableDate": "May 13",
     "dueDate": "May 20",
-    "description": "Build a RESTful API using Node.js and Express."
+    "availableUntil": "May 21",
+    "description": "Build a RESTful API using Node.js and Express. This assignment focuses on creating CRUD operations, middleware integration, and handling different HTTP methods."
   },
   {
     "_id": "A503",
@@ -45,7 +50,8 @@
     "course": "CS1235",
     "availableDate": "May 20",
     "dueDate": "May 27",
-    "description": "Integrate middleware for handling authentication and error handling in Node.js."
+    "availableUntil": "May 28",
+    "description": "Integrate middleware into your Node.js application. This assignment covers the use of middleware for logging, authentication, error handling, and more."
   },
   {
     "_id": "A601",
@@ -53,7 +59,8 @@
     "course": "CS1236",
     "availableDate": "May 6",
     "dueDate": "May 13",
-    "description": "Practice basic Python syntax and data structures."
+    "availableUntil": "May 14",
+    "description": "Get familiar with Python syntax. This assignment covers basic Python constructs such as variables, data types, control structures, functions, and error handling."
   },
   {
     "_id": "A602",
@@ -61,7 +68,8 @@
     "course": "CS1236",
     "availableDate": "May 13",
     "dueDate": "May 20",
-    "description": "Quiz on Python data structures such as lists, dictionaries, and sets."
+    "availableUntil": "May 21",
+    "description": "Test your knowledge of Python data structures. This quiz includes questions on lists, dictionaries, sets, tuples, and how to manipulate them."
   },
   {
     "_id": "A603",
@@ -69,7 +77,8 @@
     "course": "CS1236",
     "availableDate": "May 20",
     "dueDate": "May 27",
-    "description": "Develop a small project using Python, showcasing its capabilities."
+    "availableUntil": "May 28",
+    "description": "Create a Python application. This project combines your knowledge of Python syntax, data structures, and algorithms to build a functional Python application."
   },
   {
     "_id": "A701",
@@ -77,7 +86,8 @@
     "course": "CS1237",
     "availableDate": "May 6",
     "dueDate": "May 13",
-    "description": "Implement basic supervised learning algorithms using Python."
+    "availableUntil": "May 14",
+    "description": "Apply supervised learning techniques using Python and TensorFlow. This assignment includes tasks on regression, classification, and model evaluation."
   },
   {
     "_id": "A702",
@@ -85,7 +95,8 @@
     "course": "CS1237",
     "availableDate": "May 13",
     "dueDate": "May 20",
-    "description": "Quiz on model evaluation techniques such as cross-validation and confusion matrix."
+    "availableUntil": "May 21",
+    "description": "Quiz on evaluating machine learning models. Topics include precision, recall, F1 score, ROC curves, and confusion matrices."
   },
   {
     "_id": "A703",
@@ -93,7 +104,8 @@
     "course": "CS1237",
     "availableDate": "May 20",
     "dueDate": "May 27",
-    "description": "Develop a machine learning project using a dataset of your choice."
+    "availableUntil": "May 28",
+    "description": "Build a machine learning model. This project involves data preprocessing, model training, evaluation, and deployment using Python and TensorFlow."
   },
   {
     "_id": "A801",
@@ -101,7 +113,8 @@
     "course": "CS1238",
     "availableDate": "May 6",
     "dueDate": "May 13",
-    "description": "Write SQL queries to retrieve and manipulate data."
+    "availableUntil": "May 14",
+    "description": "Write complex SQL queries. This assignment covers SELECT statements, joins, subqueries, and aggregate functions."
   },
   {
     "_id": "A802",
@@ -109,7 +122,8 @@
     "course": "CS1238",
     "availableDate": "May 13",
     "dueDate": "May 20",
-    "description": "Quiz on database design principles and normalization."
+    "availableUntil": "May 21",
+    "description": "Quiz on database design principles. Topics include normalization, ER diagrams, and relational schema design."
   },
   {
     "_id": "A803",
@@ -117,7 +131,8 @@
     "course": "CS1238",
     "availableDate": "May 20",
     "dueDate": "May 27",
-    "description": "Develop a project using advanced SQL queries and database design techniques."
+    "availableUntil": "May 28",
+    "description": "Develop an advanced SQL-based application. This project involves designing a database schema, writing complex queries, and optimizing performance."
   },
   {
     "_id": "A901",
@@ -125,7 +140,8 @@
     "course": "CS1239",
     "availableDate": "May 6",
     "dueDate": "May 13",
-    "description": "Create a well-structured HTML document."
+    "availableUntil": "May 14",
+    "description": "Create the structure of a web page using HTML. This assignment covers elements, attributes, forms, and semantic HTML."
   },
   {
     "_id": "A902",
@@ -133,7 +149,8 @@
     "course": "CS1239",
     "availableDate": "May 13",
     "dueDate": "May 20",
-    "description": "Quiz on CSS styling techniques and best practices."
+    "availableUntil": "May 21",
+    "description": "Test your CSS skills. This quiz includes questions on selectors, properties, box model, and responsive design."
   },
   {
     "_id": "A903",
@@ -141,7 +158,8 @@
     "course": "CS1239",
     "availableDate": "May 20",
     "dueDate": "May 27",
-    "description": "Create a responsive web design project using HTML and CSS."
+    "availableUntil": "May 28",
+    "description": "Build a responsive web page. This project involves using CSS and media queries to create a web page that looks good on all devices."
   },
   {
     "_id": "A1001",
@@ -149,7 +167,8 @@
     "course": "CS1240",
     "availableDate": "May 6",
     "dueDate": "May 13",
-    "description": "Introduction to JavaScript with basic programming exercises."
+    "availableUntil": "May 14",
+    "description": "Learn the basics of JavaScript. This assignment covers variables, data types, functions, and basic DOM manipulation."
   },
   {
     "_id": "A1002",
@@ -157,7 +176,8 @@
     "course": "CS1240",
     "availableDate": "May 13",
     "dueDate": "May 20",
-    "description": "Quiz on manipulating the DOM using JavaScript."
+    "availableUntil": "May 21",
+    "description": "Quiz on JavaScript DOM manipulation. Topics include selecting elements, event handling, and dynamic content updates."
   },
   {
     "_id": "A1003",
@@ -165,7 +185,8 @@
     "course": "CS1240",
     "availableDate": "May 20",
     "dueDate": "May 27",
-    "description": "Develop a small project using JavaScript to demonstrate dynamic web content."
+    "availableUntil": "May 28",
+    "description": "Build a JavaScript application. This project combines everything you've learned about JavaScript, including DOM manipulation, event handling, and API interaction."
   },
   {
     "_id": "A1101",
@@ -173,7 +194,8 @@
     "course": "CS1241",
     "availableDate": "May 6",
     "dueDate": "May 13",
-    "description": "Setup an AWS environment for deploying applications."
+    "availableUntil": "May 14",
+    "description": "Set up AWS services. This assignment covers the basics of setting up AWS EC2 instances, S3 buckets, and configuring IAM roles."
   },
   {
     "_id": "A1102",
@@ -181,7 +203,8 @@
     "course": "CS1241",
     "availableDate": "May 13",
     "dueDate": "May 20",
-    "description": "Quiz on cloud security principles and best practices."
+    "availableUntil": "May 21",
+    "description": "Quiz on cloud security principles. Topics include IAM policies, security groups, and best practices for securing AWS resources."
   },
   {
     "_id": "A1103",
@@ -189,6 +212,7 @@
     "course": "CS1241",
     "availableDate": "May 20",
     "dueDate": "May 27",
-    "description": "Develop a cloud computing project using AWS services."
+    "availableUntil": "May 28",
+    "description": "Develop a cloud-based application. This project involves using AWS services to deploy a scalable and secure application."
   }
 ]

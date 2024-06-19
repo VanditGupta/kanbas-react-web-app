@@ -1,15 +1,53 @@
 import React from "react";
+import { useParams, Link } from "react-router-dom";
+import * as db from "../../Database";
 import "./Assignments.css";
 import { BsChevronDown } from "react-icons/bs";
 
+// Function to format dates to MM/DD/YYYY
+const formatDate = (date: string): string => {
+  const [month, day] = date.split(" ");
+  const monthMap: { [key: string]: string } = {
+    Jan: "01",
+    Feb: "02",
+    Mar: "03",
+    Apr: "04",
+    May: "05",
+    Jun: "06",
+    Jul: "07",
+    Aug: "08",
+    Sep: "09",
+    Oct: "10",
+    Nov: "11",
+    Dec: "12",
+  };
+  return `${monthMap[month]}/${day.padStart(2, "0")}/2024`;
+};
+
 export default function AssignmentEditor() {
+  const { cid, aid } = useParams();
+  const assignments = db.assignments;
+  // const courses = db.courses;
+
+  const assignment = assignments.find((a) => a._id === aid && a.course === cid);
+  // const course = courses.find((c) => c._id === cid);
+
+  if (!assignment) {
+    return <div>Assignment not found</div>;
+  }
+
   return (
     <div id="wd-assignments-editor" className="container mt-3">
       <div className="mb-3">
         <label htmlFor="wd-name">
           <b>Assignment Name</b>
         </label>
-        <input id="wd-name" className="form-control" value="A1 - ENV + HTML" />
+        <input
+          id="wd-name"
+          className="form-control"
+          value={assignment.title}
+          readOnly
+        />
       </div>
       <div className="mb-3">
         <label htmlFor="wd-description">
@@ -21,37 +59,18 @@ export default function AssignmentEditor() {
           style={{ height: "auto", whiteSpace: "pre-wrap" }}
         >
           The assignment is{" "}
-          <a href="#" style={{ color: "red" }}>
+          <span
+            style={{
+              color: "red",
+              textDecoration: "underline",
+              cursor: "pointer",
+            }}
+          >
             available online
-          </a>
+          </span>
           .<br />
           <br />
-          Submit a link to the landing page of your Web application running on{" "}
-          <a href="#" style={{ color: "black" }}>
-            Netlify
-          </a>
-          .<br />
-          <br />
-          The landing page should include the following:
-          <br />
-          • Your full name and section
-          <br />
-          • Links to each of the lab assignments
-          <br />• Link to the{" "}
-          <a href="#" style={{ color: "black" }}>
-            Kanbas
-          </a>{" "}
-          application
-          <br />
-          • Links to all relevant source code repositories
-          <br />
-          <br />
-          The{" "}
-          <a href="#" style={{ color: "black" }}>
-            Kanbas
-          </a>{" "}
-          application should include a link to navigate back to the landing
-          page.
+          {assignment.description}
         </div>
       </div>
       <div className="row mb-3">
@@ -63,7 +82,7 @@ export default function AssignmentEditor() {
             id="wd-points"
             className="form-control"
             type="number"
-            value={100}
+            defaultValue={100}
           />
         </div>
         <div className="col-md-6">
@@ -184,8 +203,9 @@ export default function AssignmentEditor() {
               <input
                 id="wd-due-date"
                 className="form-control"
-                type="date"
-                value="2024-05-13"
+                type="text"
+                value={formatDate(assignment.dueDate)}
+                readOnly
               />
             </div>
             <div className="col-md-6">
@@ -197,8 +217,9 @@ export default function AssignmentEditor() {
                   <input
                     id="wd-available-from"
                     className="form-control"
-                    type="date"
-                    value="2024-05-06"
+                    type="text"
+                    value={formatDate(assignment.availableDate)}
+                    readOnly
                   />
                 </div>
                 <div className="col-md-6">
@@ -208,8 +229,13 @@ export default function AssignmentEditor() {
                   <input
                     id="wd-available-until"
                     className="form-control"
-                    type="date"
-                    value="2024-05-20"
+                    type="text"
+                    value={
+                      assignment.availableUntil
+                        ? formatDate(assignment.availableUntil)
+                        : "05/20/2024"
+                    }
+                    readOnly
                   />
                 </div>
               </div>
@@ -218,8 +244,18 @@ export default function AssignmentEditor() {
         </div>
       </div>
       <div className="d-flex justify-content-end">
-        <button className="btn btn-secondary me-2">Cancel</button>
-        <button className="btn btn-danger">Save</button>
+        <Link
+          to={`/Kanbas/Courses/${cid}/Assignments`}
+          className="btn btn-secondary me-2"
+        >
+          Cancel
+        </Link>
+        <Link
+          to={`/Kanbas/Courses/${cid}/Assignments`}
+          className="btn btn-danger"
+        >
+          Save
+        </Link>
       </div>
     </div>
   );
