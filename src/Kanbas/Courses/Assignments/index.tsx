@@ -4,8 +4,13 @@ import { IoEllipsisVertical } from "react-icons/io5";
 import GreenCheckmark from "../Modules/GreenCheckmark";
 import { FiFileText } from "react-icons/fi";
 import "./Assignments.css";
+import { useParams } from "react-router";
+import * as db from "../../Database";
 
 export default function Assignments() {
+  const { cid } = useParams();
+  const assignments = db.assignments;
+
   return (
     <div id="wd-assignments" className="container mt-3">
       <div className="d-flex justify-content-between align-items-center mb-3">
@@ -50,90 +55,42 @@ export default function Assignments() {
         </div>
       </div>
       <ul id="wd-assignment-list" className="list-group rounded-0 mt-3">
-        <li className="wd-assignment-list-item list-group-item d-flex align-items-start mb-3 border position-relative">
-          <div
-            className="border-start border-3 border-success position-absolute h-100"
-            style={{ left: 0 }}
-          ></div>
-          <div className="d-flex align-items-center pe-2 me-2">
-            <BsGripVertical className="me-2 fs-3" />
-            <FiFileText className="fs-3" />
-          </div>
-          <div className="flex-fill">
-            <a
-              className="wd-assignment-link fw-bold text-dark text-decoration-none"
-              href="#/Kanbas/Courses/1234/Assignments/123"
+        {assignments
+          .filter((assignment: any) => assignment.course === cid)
+          .map((assignment: any) => (
+            <li
+              className="wd-assignment-list-item list-group-item d-flex align-items-start mb-3 border position-relative"
+              key={assignment._id}
             >
-              A1
-            </a>
-            <p className="mb-1">
-              <span className="text-danger">Multiple Modules</span> |{" "}
-              <span className="text-muted">Not available until</span> May 6 at
-              12:00am
-            </p>
-            <p className="mb-1">
-              <span className="fw-bold">Due</span> May 13 at 11:59pm | 100 pts
-            </p>
-          </div>
-          <GreenCheckmark />
-          <IoEllipsisVertical className="ms-2 fs-5" />
-        </li>
-        <li className="wd-assignment-list-item list-group-item d-flex align-items-start mb-3 border position-relative">
-          <div
-            className="border-start border-3 border-success position-absolute h-100"
-            style={{ left: 0 }}
-          ></div>
-          <div className="d-flex align-items-center pe-2 me-2">
-            <BsGripVertical className="me-2 fs-3" />
-            <FiFileText className="fs-3" />
-          </div>
-          <div className="flex-fill">
-            <a
-              className="wd-assignment-link fw-bold text-dark text-decoration-none"
-              href="#/Kanbas/Courses/1234/Assignments/124"
-            >
-              A2
-            </a>
-            <p className="mb-1">
-              <span className="text-danger">Multiple Modules</span> |{" "}
-              <span className="text-muted">Not available until</span> May 13 at
-              12:00am
-            </p>
-            <p className="mb-1">
-              <span className="fw-bold">Due</span> May 20 at 11:59pm | 100 pts
-            </p>
-          </div>
-          <GreenCheckmark />
-          <IoEllipsisVertical className="ms-2 fs-5" />
-        </li>
-        <li className="wd-assignment-list-item list-group-item d-flex align-items-start mb-3 border position-relative">
-          <div
-            className="border-start border-3 border-success position-absolute h-100"
-            style={{ left: 0 }}
-          ></div>
-          <div className="d-flex align-items-center pe-2 me-2">
-            <BsGripVertical className="me-2 fs-3" />
-            <FiFileText className="fs-3" />
-          </div>
-          <div className="flex-fill">
-            <a
-              className="wd-assignment-link fw-bold text-dark text-decoration-none"
-              href="#/Kanbas/Courses/1234/Assignments/125"
-            >
-              A3
-            </a>
-            <p className="mb-1">
-              <span className="text-danger">Multiple Modules</span> |{" "}
-              <span className="text-muted">Not available until</span> May 20 at
-              12:00am
-            </p>
-            <p className="mb-1">
-              <span className="fw-bold">Due</span> May 27 at 11:59pm | 100 pts
-            </p>
-          </div>
-          <GreenCheckmark />
-          <IoEllipsisVertical className="ms-2 fs-5" />
-        </li>
+              <div
+                className="border-start border-3 border-success position-absolute h-100"
+                style={{ left: 0 }}
+              ></div>
+              <div className="d-flex align-items-center pe-2 me-2">
+                <BsGripVertical className="me-2 fs-3" />
+                <FiFileText className="fs-3" />
+              </div>
+              <div className="flex-fill">
+                <a
+                  className="wd-assignment-link fw-bold text-dark text-decoration-none"
+                  href={`#/Kanbas/Courses/${cid}/Assignments/${assignment._id}`}
+                >
+                  {assignment.title}
+                </a>
+                <p className="mb-1">
+                  <span className="text-danger">Multiple Modules</span> |{" "}
+                  <span className="text-muted">Not available until</span>{" "}
+                  {assignment.availableDate} at 12:00am
+                </p>
+                <p className="mb-1">
+                  <span className="fw-bold">Due</span> {assignment.dueDate} at
+                  11:59pm | 100 pts
+                </p>
+              </div>
+              <GreenCheckmark />
+              <IoEllipsisVertical className="ms-2 fs-5" />
+            </li>
+          ))}
       </ul>
     </div>
   );
