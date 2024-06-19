@@ -7,8 +7,33 @@ import {
   FaChevronDown,
 } from "react-icons/fa";
 import { Table, InputGroup, FormControl, Button } from "react-bootstrap";
+import { useParams } from "react-router";
+import * as db from "../../Database"; // Assuming you have the database module with the data
 
 export default function Grades() {
+  const { cid } = useParams();
+  const enrollments = db.enrollments.filter(
+    (enrollment) => enrollment.course === cid
+  );
+  const assignments = db.assignments.filter(
+    (assignment) => assignment.course === cid
+  );
+  const users = db.users;
+  const grades = db.grades;
+
+  const getStudentName = (studentId: string) => {
+    const student = users.find((user) => user._id === studentId);
+    return student ? `${student.firstName} ${student.lastName}` : "";
+  };
+
+  const getGrade = (studentId: string, assignmentId: string) => {
+    const grade = grades.find(
+      (grade) =>
+        grade.student === studentId && grade.assignment === assignmentId
+    );
+    return grade ? `${grade.grade}%` : "N/A";
+  };
+
   return (
     <div className="container mt-3">
       <div className="d-flex justify-content-between mb-3">
@@ -75,77 +100,28 @@ export default function Grades() {
           <thead>
             <tr>
               <th>Student Name</th>
-              <th>
-                A1 SETUP
-                <br />
-                Out of 100
-              </th>
-              <th>
-                A2 HTML
-                <br />
-                Out of 100
-              </th>
-              <th>
-                A3 CSS
-                <br />
-                Out of 100
-              </th>
-              <th>
-                A4 BOOTSTRAP
-                <br />
-                Out of 100
-              </th>
+              {assignments.map((assignment) => (
+                <th key={assignment._id}>
+                  {assignment.title}
+                  <br />
+                  Out of 100
+                </th>
+              ))}
             </tr>
           </thead>
           <tbody>
-            <tr>
-              <td className="text-danger">Jane Adams</td>
-              <td>100%</td>
-              <td>100%</td>
-              <td>92.18%</td>
-              <td>66.22%</td>
-            </tr>
-            <tr>
-              <td className="text-danger">Christina Allen</td>
-              <td>100%</td>
-              <td>96.67%</td>
-              <td>92.18%</td>
-              <td>100%</td>
-            </tr>
-            <tr>
-              <td className="text-danger">Samreen Ansari</td>
-              <td>100%</td>
-              <td>100%</td>
-              <td>100%</td>
-              <td>100%</td>
-            </tr>
-            <tr>
-              <td className="text-danger">Han Bao</td>
-              <td>100%</td>
-              <td>100%</td>
-              <td>
-                <input
-                  type="text"
-                  defaultValue="88.03%"
-                  className="form-control"
-                />
-              </td>
-              <td>98.99%</td>
-            </tr>
-            <tr>
-              <td className="text-danger">Mahi Sai Srinivas Bobbili</td>
-              <td>100%</td>
-              <td>96.67%</td>
-              <td>98.37%</td>
-              <td>100%</td>
-            </tr>
-            <tr>
-              <td className="text-danger">Siran Cao</td>
-              <td>100%</td>
-              <td>100%</td>
-              <td>100%</td>
-              <td>100%</td>
-            </tr>
+            {enrollments.map((enrollment) => (
+              <tr key={enrollment.user}>
+                <td className="text-danger">
+                  {getStudentName(enrollment.user)}
+                </td>
+                {assignments.map((assignment) => (
+                  <td key={assignment._id}>
+                    {getGrade(enrollment.user, assignment._id)}
+                  </td>
+                ))}
+              </tr>
+            ))}
           </tbody>
         </Table>
       </div>
