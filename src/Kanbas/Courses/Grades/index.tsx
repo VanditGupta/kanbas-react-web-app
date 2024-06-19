@@ -8,7 +8,7 @@ import {
 } from "react-icons/fa";
 import { Table, InputGroup, FormControl, Button } from "react-bootstrap";
 import { useParams } from "react-router";
-import * as db from "../../Database"; // Assuming you have the database module with the data
+import * as db from "../../Database";
 
 export default function Grades() {
   const { cid } = useParams();
