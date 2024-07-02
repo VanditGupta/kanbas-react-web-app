@@ -51,4 +51,4 @@ export default function TOC() {
       </li>
     </ul>
   );
-}
+} 
