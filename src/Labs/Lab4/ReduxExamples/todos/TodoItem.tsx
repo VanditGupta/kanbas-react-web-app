@@ -2,11 +2,9 @@ import React from "react";
 import { useDispatch } from "react-redux";
 import { deleteTodo, setTodo } from "./todosReducer";
 
-// Define the structure of a Todo item
 interface Todo {
   id: number;
   title: string;
-  // Add any other properties that the todo object might have
 }
 
 interface TodoItemProps {
