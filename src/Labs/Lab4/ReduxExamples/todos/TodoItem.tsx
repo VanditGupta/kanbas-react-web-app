@@ -16,13 +16,18 @@ export default function TodoItem({ todo }: TodoItemProps) {
   return (
     <li key={todo.id} className="list-group-item">
       <button
+        className="btn btn-primary me-2"
+        onClick={() => dispatch(setTodo(todo))}
+        id="wd-set-todo-click"
+      >
+        Edit
+      </button>
+      <button
+        className="btn btn-danger"
         onClick={() => dispatch(deleteTodo(todo.id))}
         id="wd-delete-todo-click"
       >
         Delete
-      </button>
-      <button onClick={() => dispatch(setTodo(todo))} id="wd-set-todo-click">
-        Edit
       </button>
       {todo.title}
     </li>

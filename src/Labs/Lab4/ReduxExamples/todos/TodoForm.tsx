@@ -7,11 +7,16 @@ export default function TodoForm() {
   const dispatch = useDispatch();
   return (
     <li className="list-group-item">
-      <button onClick={() => dispatch(addTodo(todo))} id="wd-add-todo-click">
+      <button
+        className="btn btn-success"
+        onClick={() => dispatch(addTodo(todo))}
+        id="wd-add-todo-click"
+      >
         {" "}
         Add{" "}
       </button>
       <button
+        className="btn btn-warning me-2"
         onClick={() => dispatch(updateTodo(todo))}
         id="wd-update-todo-click"
       >
