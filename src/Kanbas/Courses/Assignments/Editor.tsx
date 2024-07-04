@@ -203,6 +203,50 @@ export default function AssignmentEditor() {
           </div>
         </div>
       </div>
+      <div className="row mb-3">
+        <div className="col-md-6">
+          <label htmlFor="wd-due-date">
+            <b>Due Date</b>
+          </label>
+          <input
+            id="wd-due-date"
+            className="form-control"
+            type="text"
+            value={assignment.dueDate}
+            onChange={(e) =>
+              setAssignment({ ...assignment, dueDate: e.target.value })
+            }
+          />
+        </div>
+        <div className="col-md-6">
+          <label htmlFor="wd-available-from-date">
+            <b>Available From</b>
+          </label>
+          <input
+            id="wd-available-from-date"
+            className="form-control"
+            type="text"
+            value={assignment.availableDate}
+            onChange={(e) =>
+              setAssignment({ ...assignment, availableDate: e.target.value })
+            }
+          />
+        </div>
+      </div>
+      <div className="mb-3">
+        <label htmlFor="wd-available-until-date">
+          <b>Available Until</b>
+        </label>
+        <input
+          id="wd-available-until-date"
+          className="form-control"
+          type="text"
+          value={assignment.availableUntil}
+          onChange={(e) =>
+            setAssignment({ ...assignment, availableUntil: e.target.value })
+          }
+        />
+      </div>
       <div className="d-flex justify-content-end">
         <button onClick={handleCancel} className="btn btn-secondary me-2">
           Cancel
