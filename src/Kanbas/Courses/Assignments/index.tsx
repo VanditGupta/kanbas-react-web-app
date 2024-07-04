@@ -1,15 +1,20 @@
+import React from "react";
+import { useParams } from "react-router";
+import { useSelector, useDispatch } from "react-redux";
 import { BsGripVertical, BsChevronDown } from "react-icons/bs";
-import { FaPlus, FaSearch } from "react-icons/fa";
+import { FaPlus, FaSearch, FaTrash } from "react-icons/fa";
 import { IoEllipsisVertical } from "react-icons/io5";
 import GreenCheckmark from "../Modules/GreenCheckmark";
 import { FiFileText } from "react-icons/fi";
 import "./Assignments.css";
-import { useParams } from "react-router";
-import * as db from "../../Database";
+import { deleteAssignment } from "./reducer";
 
 export default function Assignments() {
   const { cid } = useParams();
-  const assignments = db.assignments;
+  const assignments = useSelector(
+    (state: any) => state.assignmentsReducer.assignments
+  );
+  const dispatch = useDispatch();
 
   return (
     <div id="wd-assignments" className="container mt-3">
@@ -87,7 +92,15 @@ export default function Assignments() {
                   11:59pm | 100 pts
                 </p>
               </div>
-              <GreenCheckmark />
+              <div className="icon-container">
+                <button
+                  onClick={() => dispatch(deleteAssignment(assignment._id))}
+                  className="btn btn-outline-danger btn-sm"
+                >
+                  <FaTrash className="text-danger" />
+                </button>
+                <GreenCheckmark />
+              </div>
               <IoEllipsisVertical className="ms-2 fs-5" />
             </li>
           ))}
