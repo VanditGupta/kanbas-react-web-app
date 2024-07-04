@@ -7,7 +7,7 @@ import { IoEllipsisVertical } from "react-icons/io5";
 import GreenCheckmark from "../Modules/GreenCheckmark";
 import { FiFileText } from "react-icons/fi";
 import "./Assignments.css";
-import { deleteAssignment, addAssignment } from "./reducer";
+import { deleteAssignment } from "./reducer";
 
 export default function Assignments() {
   const { cid } = useParams();
@@ -19,17 +19,6 @@ export default function Assignments() {
 
   const handleAddAssignment = () => {
     const newAssignmentId = new Date().getTime().toString();
-    dispatch(
-      addAssignment({
-        _id: newAssignmentId,
-        title: "New Assignment",
-        course: cid,
-        availableDate: "Jan 1",
-        dueDate: "Jan 7",
-        availableUntil: "Jan 8",
-        description: "",
-      })
-    );
     navigate(`/Kanbas/Courses/${cid}/Assignments/${newAssignmentId}`);
   };
 

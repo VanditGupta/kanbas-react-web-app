@@ -1,10 +1,11 @@
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 import { useParams, useNavigate, Link } from "react-router-dom";
 import { useSelector, useDispatch } from "react-redux";
 import { BsChevronDown } from "react-icons/bs";
-import { updateAssignment } from "./reducer";
+import { addAssignment, updateAssignment } from "./reducer";
 import "./Assignments.css";
 
+// Function to format dates to MM/DD/YYYY
 const formatDate = (date: string): string => {
   const [month, day] = date.split(" ");
   const monthMap: { [key: string]: string } = {
@@ -53,13 +54,36 @@ export default function AssignmentEditor() {
   );
 
   const handleSave = () => {
-    dispatch(updateAssignment(assignment));
+    if (!existingAssignment) {
+      dispatch(addAssignment(assignment));
+    } else {
+      dispatch(updateAssignment(assignment));
+    }
     navigate(`/Kanbas/Courses/${cid}/Assignments`);
   };
 
-  if (!assignment) {
-    return <div>Assignment not found</div>;
-  }
+  const handleCancel = () => {
+    navigate(`/Kanbas/Courses/${cid}/Assignments`);
+  };
+
+  useEffect(() => {
+    if (!existingAssignment && !assignments.find((a: any) => a._id === aid)) {
+      setAssignment({
+        ...assignment,
+        _id: aid,
+        title: "",
+        course: cid,
+        availableDate: "Jan 1",
+        dueDate: "Jan 7",
+        availableUntil: "Jan 8",
+        description: "",
+        points: 100,
+        assignmentGroup: "ASSIGNMENTS",
+        displayGrade: "Percentage",
+        submissionType: "Online",
+      });
+    }
+  }, [aid, cid, assignments, existingAssignment]);
 
   return (
     <div id="wd-assignments-editor" className="container mt-3">
@@ -180,12 +204,9 @@ export default function AssignmentEditor() {
         </div>
       </div>
       <div className="d-flex justify-content-end">
-        <Link
-          to={`/Kanbas/Courses/${cid}/Assignments`}
-          className="btn btn-secondary me-2"
-        >
+        <button onClick={handleCancel} className="btn btn-secondary me-2">
           Cancel
-        </Link>
+        </button>
         <button onClick={handleSave} className="btn btn-danger">
           Save
         </button>
