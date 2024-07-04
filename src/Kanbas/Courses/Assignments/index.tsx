@@ -1,5 +1,5 @@
 import React from "react";
-import { useParams } from "react-router";
+import { useParams, useNavigate } from "react-router-dom";
 import { useSelector, useDispatch } from "react-redux";
 import { BsGripVertical, BsChevronDown } from "react-icons/bs";
 import { FaPlus, FaSearch, FaTrash } from "react-icons/fa";
@@ -7,7 +7,7 @@ import { IoEllipsisVertical } from "react-icons/io5";
 import GreenCheckmark from "../Modules/GreenCheckmark";
 import { FiFileText } from "react-icons/fi";
 import "./Assignments.css";
-import { deleteAssignment } from "./reducer";
+import { deleteAssignment, addAssignment } from "./reducer";
 
 export default function Assignments() {
   const { cid } = useParams();
@@ -15,6 +15,23 @@ export default function Assignments() {
     (state: any) => state.assignmentsReducer.assignments
   );
   const dispatch = useDispatch();
+  const navigate = useNavigate();
+
+  const handleAddAssignment = () => {
+    const newAssignmentId = new Date().getTime().toString();
+    dispatch(
+      addAssignment({
+        _id: newAssignmentId,
+        title: "New Assignment",
+        course: cid,
+        availableDate: "Jan 1",
+        dueDate: "Jan 7",
+        availableUntil: "Jan 8",
+        description: "",
+      })
+    );
+    navigate(`/Kanbas/Courses/${cid}/Assignments/${newAssignmentId}`);
+  };
 
   return (
     <div id="wd-assignments" className="container mt-3">
@@ -33,7 +50,7 @@ export default function Assignments() {
           <button className="btn btn-secondary me-2">
             <FaPlus className="me-1" /> Group
           </button>
-          <button className="btn btn-danger">
+          <button className="btn btn-danger" onClick={handleAddAssignment}>
             <FaPlus className="me-1" /> Assignment
           </button>
         </div>
