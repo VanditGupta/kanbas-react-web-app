@@ -95,7 +95,7 @@ export default function Assignments() {
                 </p>
                 <p className="mb-1">
                   <span className="fw-bold">Due</span> {assignment.dueDate} at
-                  11:59pm | 100 pts 
+                  11:59pm | 100 pts
                 </p>
               </div>
               <div className="icon-container">
