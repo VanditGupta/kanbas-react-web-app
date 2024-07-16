@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from "react";
+import { useEffect, useCallback } from "react";
 import { useParams, useNavigate } from "react-router-dom";
 import { useSelector, useDispatch } from "react-redux";
 import { BsGripVertical, BsChevronDown } from "react-icons/bs";
@@ -7,12 +7,7 @@ import { IoEllipsisVertical } from "react-icons/io5";
 import GreenCheckmark from "../Modules/GreenCheckmark";
 import { FiFileText } from "react-icons/fi";
 import "./Assignments.css";
-import {
-  setAssignments,
-  addAssignment,
-  deleteAssignment,
-  updateAssignment,
-} from "./reducer";
+import { setAssignments, deleteAssignment, updateAssignment } from "./reducer";
 import * as client from "./client";
 
 export default function Assignments() {
@@ -23,14 +18,14 @@ export default function Assignments() {
   const dispatch = useDispatch();
   const navigate = useNavigate();
 
-  const fetchAssignments = async () => {
+  const fetchAssignments = useCallback(async () => {
     const assignments = await client.findAssignmentsForCourse(cid as string);
     dispatch(setAssignments(assignments));
-  };
+  }, [cid, dispatch]);
 
   useEffect(() => {
     fetchAssignments();
-  }, [cid]);
+  }, [fetchAssignments]);
 
   const handleAddAssignment = () => {
     const newAssignmentId = "new"; // Use 'new' to indicate a new assignment
