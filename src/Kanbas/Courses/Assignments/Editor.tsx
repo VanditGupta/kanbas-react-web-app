@@ -1,11 +1,11 @@
 import React, { useState, useEffect } from "react";
-import { useParams, useNavigate, Link } from "react-router-dom";
+import { useParams, useNavigate } from "react-router-dom";
 import { useSelector, useDispatch } from "react-redux";
 import { BsChevronDown } from "react-icons/bs";
 import { addAssignment, updateAssignment } from "./reducer";
+import * as client from "./client";
 import "./Assignments.css";
 
-// Function to format dates to MM/DD/YYYY
 const formatDate = (date: string): string => {
   const [month, day] = date.split(" ");
   const monthMap: { [key: string]: string } = {
@@ -53,10 +53,27 @@ export default function AssignmentEditor() {
     }
   );
 
-  const handleSave = () => {
-    if (!existingAssignment) {
-      dispatch(addAssignment(assignment));
+  useEffect(() => {
+    if (!existingAssignment && aid !== "new") {
+      const fetchAssignment = async () => {
+        const fetchedAssignment = await client.fetchAssignment(aid as string);
+        if (fetchedAssignment) {
+          setAssignment(fetchedAssignment);
+        }
+      };
+      fetchAssignment();
+    }
+  }, [aid, existingAssignment]);
+
+  const handleSave = async () => {
+    if (aid === "new") {
+      const newAssignment = await client.createAssignment(
+        cid as string,
+        assignment
+      );
+      dispatch(addAssignment(newAssignment));
     } else {
+      await client.updateAssignment(assignment);
       dispatch(updateAssignment(assignment));
     }
     navigate(`/Kanbas/Courses/${cid}/Assignments`);
@@ -65,25 +82,6 @@ export default function AssignmentEditor() {
   const handleCancel = () => {
     navigate(`/Kanbas/Courses/${cid}/Assignments`);
   };
-
-  useEffect(() => {
-    if (!existingAssignment && !assignments.find((a: any) => a._id === aid)) {
-      setAssignment({
-        ...assignment,
-        _id: aid,
-        title: "",
-        course: cid,
-        availableDate: "Jan 1",
-        dueDate: "Jan 7",
-        availableUntil: "Jan 8",
-        description: "",
-        points: 100,
-        assignmentGroup: "ASSIGNMENTS",
-        displayGrade: "Percentage",
-        submissionType: "Online",
-      });
-    }
-  }, [aid, cid, assignments, existingAssignment]);
 
   return (
     <div id="wd-assignments-editor" className="container mt-3">

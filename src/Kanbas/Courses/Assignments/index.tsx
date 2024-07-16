@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState, useEffect } from "react";
 import { useParams, useNavigate } from "react-router-dom";
 import { useSelector, useDispatch } from "react-redux";
 import { BsGripVertical, BsChevronDown } from "react-icons/bs";
@@ -7,7 +7,13 @@ import { IoEllipsisVertical } from "react-icons/io5";
 import GreenCheckmark from "../Modules/GreenCheckmark";
 import { FiFileText } from "react-icons/fi";
 import "./Assignments.css";
-import { deleteAssignment } from "./reducer";
+import {
+  setAssignments,
+  addAssignment,
+  deleteAssignment,
+  updateAssignment,
+} from "./reducer";
+import * as client from "./client";
 
 export default function Assignments() {
   const { cid } = useParams();
@@ -17,9 +23,28 @@ export default function Assignments() {
   const dispatch = useDispatch();
   const navigate = useNavigate();
 
+  const fetchAssignments = async () => {
+    const assignments = await client.findAssignmentsForCourse(cid as string);
+    dispatch(setAssignments(assignments));
+  };
+
+  useEffect(() => {
+    fetchAssignments();
+  }, [cid]);
+
   const handleAddAssignment = () => {
-    const newAssignmentId = new Date().getTime().toString();
+    const newAssignmentId = "new"; // Use 'new' to indicate a new assignment
     navigate(`/Kanbas/Courses/${cid}/Assignments/${newAssignmentId}`);
+  };
+
+  const removeAssignment = async (assignmentId: string) => {
+    await client.deleteAssignment(assignmentId);
+    dispatch(deleteAssignment(assignmentId));
+  };
+
+  const saveAssignment = async (assignment: any) => {
+    await client.updateAssignment(assignment);
+    dispatch(updateAssignment(assignment));
   };
 
   return (
@@ -82,25 +107,43 @@ export default function Assignments() {
                 <FiFileText className="fs-3" />
               </div>
               <div className="flex-fill">
-                <a
-                  className="wd-assignment-link fw-bold text-dark text-decoration-none"
-                  href={`#/Kanbas/Courses/${cid}/Assignments/${assignment._id}`}
-                >
-                  {assignment.title}
-                </a>
-                <p className="mb-1">
-                  <span className="text-danger">Multiple Modules</span> |{" "}
-                  <span className="text-muted">Not available until</span>{" "}
-                  {assignment.availableDate} at 12:00am
-                </p>
-                <p className="mb-1">
-                  <span className="fw-bold">Due</span> {assignment.dueDate} at
-                  11:59pm | {assignment.points || 100} pts
-                </p>
+                {!assignment.editing && (
+                  <>
+                    <a
+                      className="wd-assignment-link fw-bold text-dark text-decoration-none"
+                      href={`#/Kanbas/Courses/${cid}/Assignments/${assignment._id}`}
+                    >
+                      {assignment.title}
+                    </a>
+                    <p className="mb-1">
+                      <span className="text-danger">Multiple Modules</span> |{" "}
+                      <span className="text-muted">Not available until</span>{" "}
+                      {assignment.availableDate} at 12:00am
+                    </p>
+                    <p className="mb-1">
+                      <span className="fw-bold">Due</span> {assignment.dueDate}{" "}
+                      at 11:59pm | {assignment.points || 100} pts
+                    </p>
+                  </>
+                )}
+                {assignment.editing && (
+                  <input
+                    className="form-control w-50 d-inline-block"
+                    onChange={(e) =>
+                      saveAssignment({ ...assignment, title: e.target.value })
+                    }
+                    onKeyDown={(e) => {
+                      if (e.key === "Enter") {
+                        saveAssignment({ ...assignment, editing: false });
+                      }
+                    }}
+                    value={assignment.title}
+                  />
+                )}
               </div>
               <div className="icon-container">
                 <button
-                  onClick={() => dispatch(deleteAssignment(assignment._id))}
+                  onClick={() => removeAssignment(assignment._id)}
                   className="btn btn-outline-danger btn-sm"
                 >
                   <FaTrash className="text-danger" />
