@@ -7,7 +7,11 @@
     "lastName": "Adams",
     "email": "jane.adams@gmail.com",
     "dob": "1999-05-29",
-    "role": "STUDENT"
+    "role": "STUDENT",
+    "loginId": "001234561",
+    "section": "S101",
+    "lastActivity": "2024-07-27T10:15:30Z",
+    "totalActivity": "15:21:31"
   },
   {
     "_id": "122",
@@ -17,7 +21,11 @@
     "lastName": "Allen",
     "email": "christina.allen@gmail.com",
     "dob": "2000-02-19",
-    "role": "STUDENT"
+    "role": "STUDENT",
+    "loginId": "001234562",
+    "section": "S101",
+    "lastActivity": "2024-07-26T14:22:10Z",
+    "totalActivity": "20:12:42"
   },
   {
     "_id": "123",
@@ -27,7 +35,11 @@
     "lastName": "Ansari",
     "email": "samreen.ansari@gmail.com",
     "dob": "2001-07-04",
-    "role": "STUDENT"
+    "role": "STUDENT",
+    "loginId": "001234563",
+    "section": "S101",
+    "lastActivity": "2024-07-25T08:30:45Z",
+    "totalActivity": "17:45:30"
   },
   {
     "_id": "124",
@@ -37,7 +49,11 @@
     "lastName": "Bao",
     "email": "han.bao@gmail.com",
     "dob": "1997-11-22",
-    "role": "STUDENT"
+    "role": "STUDENT",
+    "loginId": "001234564",
+    "section": "S101",
+    "lastActivity": "2024-07-24T11:05:30Z",
+    "totalActivity": "19:30:15"
   },
   {
     "_id": "125",
@@ -47,7 +63,11 @@
     "lastName": "Bobbili",
     "email": "mahi.sai@gmail.com",
     "dob": "1998-05-25",
-    "role": "STUDENT"
+    "role": "STUDENT",
+    "loginId": "001234565",
+    "section": "S101",
+    "lastActivity": "2024-07-23T15:45:15Z",
+    "totalActivity": "18:12:37"
   },
   {
     "_id": "126",
@@ -57,7 +77,11 @@
     "lastName": "Cao",
     "email": "siran.cao@gmail.com",
     "dob": "1999-12-18",
-    "role": "STUDENT"
+    "role": "STUDENT",
+    "loginId": "001234566",
+    "section": "S102",
+    "lastActivity": "2024-07-22T09:55:30Z",
+    "totalActivity": "14:39:41"
   },
   {
     "_id": "127",
@@ -67,7 +91,11 @@
     "lastName": "Doe",
     "email": "john.doe@gmail.com",
     "dob": "1996-01-15",
-    "role": "STUDENT"
+    "role": "STUDENT",
+    "loginId": "001234567",
+    "section": "S102",
+    "lastActivity": "2024-07-21T11:20:45Z",
+    "totalActivity": "16:50:30"
   },
   {
     "_id": "128",
@@ -77,7 +105,11 @@
     "lastName": "Watson",
     "email": "emma.watson@gmail.com",
     "dob": "2001-04-15",
-    "role": "STUDENT"
+    "role": "STUDENT",
+    "loginId": "001234568",
+    "section": "S102",
+    "lastActivity": "2024-07-20T12:40:30Z",
+    "totalActivity": "18:25:15"
   },
   {
     "_id": "129",
@@ -87,7 +119,11 @@
     "lastName": "Wei",
     "email": "li.wei@gmail.com",
     "dob": "2000-09-05",
-    "role": "STUDENT"
+    "role": "STUDENT",
+    "loginId": "001234569",
+    "section": "S102",
+    "lastActivity": "2024-07-19T10:50:15Z",
+    "totalActivity": "15:10:48"
   },
   {
     "_id": "130",
@@ -97,7 +133,11 @@
     "lastName": "Kumar",
     "email": "arjun.kumar@gmail.com",
     "dob": "1998-11-11",
-    "role": "STUDENT"
+    "role": "STUDENT",
+    "loginId": "001234570",
+    "section": "S102",
+    "lastActivity": "2024-07-18T14:25:30Z",
+    "totalActivity": "21:13:21"
   },
   {
     "_id": "131",
@@ -107,7 +147,11 @@
     "lastName": "Sharma",
     "email": "rohan.sharma@gmail.com",
     "dob": "1999-02-23",
-    "role": "STUDENT"
+    "role": "STUDENT",
+    "loginId": "001234571",
+    "section": "S103",
+    "lastActivity": "2024-07-17T16:15:45Z",
+    "totalActivity": "23:45:30"
   },
   {
     "_id": "132",
@@ -117,7 +161,11 @@
     "lastName": "Smith",
     "email": "megan.smith@gmail.com",
     "dob": "2000-08-14",
-    "role": "STUDENT"
+    "role": "STUDENT",
+    "loginId": "001234572",
+    "section": "S103",
+    "lastActivity": "2024-07-16T13:35:30Z",
+    "totalActivity": "19:30:15"
   },
   {
     "_id": "133",
@@ -127,7 +175,11 @@
     "lastName": "Sato",
     "email": "yuki.sato@gmail.com",
     "dob": "1997-12-04",
-    "role": "STUDENT"
+    "role": "STUDENT",
+    "loginId": "001234573",
+    "section": "S103",
+    "lastActivity": "2024-07-15T08:25:15Z",
+    "totalActivity": "12:45:30"
   },
   {
     "_id": "134",
@@ -137,7 +189,11 @@
     "lastName": "Mehta",
     "email": "raj.mehta@gmail.com",
     "dob": "1998-07-29",
-    "role": "STUDENT"
+    "role": "STUDENT",
+    "loginId": "001234574",
+    "section": "S103",
+    "lastActivity": "2024-07-14T12:45:30Z",
+    "totalActivity": "20:30:15"
   },
   {
     "_id": "135",
@@ -147,7 +203,11 @@
     "lastName": "Johnson",
     "email": "lucas.johnson@gmail.com",
     "dob": "1996-04-10",
-    "role": "STUDENT"
+    "role": "STUDENT",
+    "loginId": "001234575",
+    "section": "S103",
+    "lastActivity": "2024-07-13T11:55:45Z",
+    "totalActivity": "18:15:30"
   },
   {
     "_id": "136",
@@ -157,7 +217,11 @@
     "lastName": "Garcia",
     "email": "maria.garcia@gmail.com",
     "dob": "1999-03-17",
-    "role": "STUDENT"
+    "role": "STUDENT",
+    "loginId": "001234576",
+    "section": "S104",
+    "lastActivity": "2024-07-12T09:05:30Z",
+    "totalActivity": "14:30:15"
   },
   {
     "_id": "137",
@@ -167,7 +231,11 @@
     "lastName": "Liu",
     "email": "chen.liu@gmail.com",
     "dob": "1998-05-25",
-    "role": "STUDENT"
+    "role": "STUDENT",
+    "loginId": "001234577",
+    "section": "S104",
+    "lastActivity": "2024-07-11T15:25:15Z",
+    "totalActivity": "22:45:30"
   },
   {
     "_id": "138",
@@ -177,7 +245,11 @@
     "lastName": "Patel",
     "email": "aarav.patel@gmail.com",
     "dob": "1997-11-19",
-    "role": "STUDENT"
+    "role": "STUDENT",
+    "loginId": "001234578",
+    "section": "S104",
+    "lastActivity": "2024-07-10T14:55:30Z",
+    "totalActivity": "21:10:15"
   },
   {
     "_id": "139",
@@ -187,7 +259,11 @@
     "lastName": "Lee",
     "email": "sophia.lee@gmail.com",
     "dob": "2000-06-21",
-    "role": "STUDENT"
+    "role": "STUDENT",
+    "loginId": "001234579",
+    "section": "S104",
+    "lastActivity": "2024-07-09T10:25:45Z",
+    "totalActivity": "16:45:30"
   },
   {
     "_id": "140",
@@ -197,7 +273,11 @@
     "lastName": "Khan",
     "email": "ahmed.khan@gmail.com",
     "dob": "1996-08-15",
-    "role": "STUDENT"
+    "role": "STUDENT",
+    "loginId": "001234580",
+    "section": "S104",
+    "lastActivity": "2024-07-08T08:35:30Z",
+    "totalActivity": "13:50:15"
   },
   {
     "_id": "141",
@@ -207,7 +287,11 @@
     "lastName": "Clark",
     "email": "emily.clark@gmail.com",
     "dob": "1999-01-09",
-    "role": "STUDENT"
+    "role": "STUDENT",
+    "loginId": "001234581",
+    "section": "S105",
+    "lastActivity": "2024-07-07T11:45:15Z",
+    "totalActivity": "18:10:30"
   },
   {
     "_id": "142",
@@ -217,7 +301,11 @@
     "lastName": "Singh",
     "email": "vikram.singh@gmail.com",
     "dob": "1997-10-05",
-    "role": "STUDENT"
+    "role": "STUDENT",
+    "loginId": "001234582",
+    "section": "S105",
+    "lastActivity": "2024-07-06T09:55:30Z",
+    "totalActivity": "15:21:11"
   },
   {
     "_id": "143",
@@ -227,7 +315,11 @@
     "lastName": "Brown",
     "email": "olivia.brown@gmail.com",
     "dob": "2001-12-11",
-    "role": "STUDENT"
+    "role": "STUDENT",
+    "loginId": "001234583",
+    "section": "S105",
+    "lastActivity": "2024-07-05T14:30:15Z",
+    "totalActivity": "20:45:30"
   },
   {
     "_id": "144",
@@ -237,7 +329,11 @@
     "lastName": "Taylor",
     "email": "william.taylor@gmail.com",
     "dob": "1998-07-03",
-    "role": "STUDENT"
+    "role": "STUDENT",
+    "loginId": "001234584",
+    "section": "S105",
+    "lastActivity": "2024-07-04T12:15:30Z",
+    "totalActivity": "18:30:15"
   },
   {
     "_id": "145",
@@ -247,7 +343,11 @@
     "lastName": "Baker",
     "email": "aaron.baker@gmail.com",
     "dob": "1999-06-23",
-    "role": "STUDENT"
+    "role": "STUDENT",
+    "loginId": "001234585",
+    "section": "S105",
+    "lastActivity": "2024-07-03T10:05:15Z",
+    "totalActivity": "15:20:30"
   },
   {
     "_id": "146",
@@ -257,7 +357,11 @@
     "lastName": "Wilson",
     "email": "isabella.wilson@gmail.com",
     "dob": "2000-10-12",
-    "role": "STUDENT"
+    "role": "STUDENT",
+    "loginId": "001234586",
+    "section": "S106",
+    "lastActivity": "2024-07-02T08:45:30Z",
+    "totalActivity": "14:10:15"
   },
   {
     "_id": "147",
@@ -267,7 +371,11 @@
     "lastName": "Martin",
     "email": "daniel.martin@gmail.com",
     "dob": "1998-03-29",
-    "role": "STUDENT"
+    "role": "STUDENT",
+    "loginId": "001234587",
+    "section": "S106",
+    "lastActivity": "2024-07-01T11:30:15Z",
+    "totalActivity": "17:45:30"
   },
   {
     "_id": "148",
@@ -277,7 +385,11 @@
     "lastName": "Harris",
     "email": "ella.harris@gmail.com",
     "dob": "1997-05-19",
-    "role": "STUDENT"
+    "role": "STUDENT",
+    "loginId": "001234588",
+    "section": "S106",
+    "lastActivity": "2024-06-30T09:15:30Z",
+    "totalActivity": "15:30:15"
   },
   {
     "_id": "149",
@@ -287,7 +399,11 @@
     "lastName": "Young",
     "email": "michael.young@gmail.com",
     "dob": "2001-11-08",
-    "role": "STUDENT"
+    "role": "STUDENT",
+    "loginId": "001234589",
+    "section": "S106",
+    "lastActivity": "2024-06-29T12:00:15Z",
+    "totalActivity": "18:25:30"
   },
   {
     "_id": "150",
@@ -297,7 +413,11 @@
     "lastName": "King",
     "email": "sarah.king@gmail.com",
     "dob": "1999-04-14",
-    "role": "STUDENT"
+    "role": "STUDENT",
+    "loginId": "001234590",
+    "section": "S106",
+    "lastActivity": "2024-06-28T10:45:30Z",
+    "totalActivity": "16:10:15"
   },
   {
     "_id": "151",
@@ -307,7 +427,11 @@
     "lastName": "Scott",
     "email": "david.scott@gmail.com",
     "dob": "1998-02-05",
-    "role": "STUDENT"
+    "role": "STUDENT",
+    "loginId": "001234591",
+    "section": "S107",
+    "lastActivity": "2024-06-27T08:30:15Z",
+    "totalActivity": "14:45:30"
   },
   {
     "_id": "152",
@@ -317,7 +441,11 @@
     "lastName": "Moore",
     "email": "lucy.moore@gmail.com",
     "dob": "2000-08-30",
-    "role": "STUDENT"
+    "role": "STUDENT",
+    "loginId": "001234592",
+    "section": "S107",
+    "lastActivity": "2024-06-26T11:15:30Z",
+    "totalActivity": "17:30:15"
   },
   {
     "_id": "153",
@@ -327,7 +455,11 @@
     "lastName": "White",
     "email": "alexander.white@gmail.com",
     "dob": "1999-09-14",
-    "role": "STUDENT"
+    "role": "STUDENT",
+    "loginId": "001234593",
+    "section": "S107",
+    "lastActivity": "2024-06-25T09:00:15Z",
+    "totalActivity": "15:25:30"
   },
   {
     "_id": "154",
@@ -337,7 +469,11 @@
     "lastName": "Jones",
     "email": "mia.jones@gmail.com",
     "dob": "1998-12-28",
-    "role": "STUDENT"
+    "role": "STUDENT",
+    "loginId": "001234594",
+    "section": "S107",
+    "lastActivity": "2024-06-24T12:45:30Z",
+    "totalActivity": "19:10:15"
   },
   {
     "_id": "155",
@@ -347,7 +483,11 @@
     "lastName": "Thomas",
     "email": "chloe.thomas@gmail.com",
     "dob": "2001-04-04",
-    "role": "STUDENT"
+    "role": "STUDENT",
+    "loginId": "001234595",
+    "section": "S107",
+    "lastActivity": "2024-06-23T10:30:15Z",
+    "totalActivity": "16:45:30"
   },
   {
     "_id": "156",
@@ -357,7 +497,11 @@
     "lastName": "Martinez",
     "email": "ethan.martinez@gmail.com",
     "dob": "1997-07-22",
-    "role": "STUDENT"
+    "role": "STUDENT",
+    "loginId": "001234596",
+    "section": "S108",
+    "lastActivity": "2024-06-22T08:15:30Z",
+    "totalActivity": "14:30:15"
   },
   {
     "_id": "157",
@@ -367,7 +511,11 @@
     "lastName": "Rodriguez",
     "email": "ava.rodriguez@gmail.com",
     "dob": "1999-10-19",
-    "role": "STUDENT"
+    "role": "STUDENT",
+    "loginId": "001234597",
+    "section": "S108",
+    "lastActivity": "2024-06-21T11:00:15Z",
+    "totalActivity": "17:25:30"
   },
   {
     "_id": "158",
@@ -377,7 +525,11 @@
     "lastName": "Lewis",
     "email": "noah.lewis@gmail.com",
     "dob": "2000-03-11",
-    "role": "STUDENT"
+    "role": "STUDENT",
+    "loginId": "001234598",
+    "section": "S108",
+    "lastActivity": "2024-06-20T09:45:30Z",
+    "totalActivity": "15:10:15"
   },
   {
     "_id": "159",
@@ -387,7 +539,11 @@
     "lastName": "Clarkson",
     "email": "emily.clarkson@gmail.com",
     "dob": "1998-01-07",
-    "role": "STUDENT"
+    "role": "STUDENT",
+    "loginId": "001234599",
+    "section": "S108",
+    "lastActivity": "2024-06-19T12:30:15Z",
+    "totalActivity": "18:45:30"
   },
   {
     "_id": "160",
@@ -397,7 +553,11 @@
     "lastName": "Jackson",
     "email": "harry.jackson@gmail.com",
     "dob": "2001-06-02",
-    "role": "STUDENT"
+    "role": "STUDENT",
+    "loginId": "001234600",
+    "section": "S108",
+    "lastActivity": "2024-06-18T10:15:30Z",
+    "totalActivity": "16:30:15"
   },
   {
     "_id": "161",
@@ -407,7 +567,11 @@
     "lastName": "Turner",
     "email": "grace.turner@gmail.com",
     "dob": "1997-11-10",
-    "role": "STUDENT"
+    "role": "STUDENT",
+    "loginId": "001234601",
+    "section": "S109",
+    "lastActivity": "2024-06-17T08:00:15Z",
+    "totalActivity": "14:25:30"
   },
   {
     "_id": "162",
@@ -417,7 +581,11 @@
     "lastName": "Hall",
     "email": "logan.hall@gmail.com",
     "dob": "1999-08-13",
-    "role": "STUDENT"
+    "role": "STUDENT",
+    "loginId": "001234602",
+    "section": "S109",
+    "lastActivity": "2024-06-16T11:45:30Z",
+    "totalActivity": "18:10:15"
   },
   {
     "_id": "163",
@@ -427,7 +595,11 @@
     "lastName": "Lee",
     "email": "zoe.lee@gmail.com",
     "dob": "1998-05-15",
-    "role": "STUDENT"
+    "role": "STUDENT",
+    "loginId": "001234603",
+    "section": "S109",
+    "lastActivity": "2024-06-15T09:30:15Z",
+    "totalActivity": "15:45:30"
   },
   {
     "_id": "164",
@@ -437,7 +609,11 @@
     "lastName": "Knieling",
     "email": "conny.knieling@gmail.com",
     "dob": "2001-02-28",
-    "role": "STUDENT"
+    "role": "STUDENT",
+    "loginId": "001234604",
+    "section": "S109",
+    "lastActivity": "2024-06-14T12:15:30Z",
+    "totalActivity": "18:30:15"
   },
   {
     "_id": "165",
@@ -447,7 +623,11 @@
     "lastName": "Srivastava",
     "email": "devansh.srivastava@gmail.com",
     "dob": "1998-04-23",
-    "role": "STUDENT"
+    "role": "STUDENT",
+    "loginId": "001234605",
+    "section": "S109",
+    "lastActivity": "2024-06-13T10:00:15Z",
+    "totalActivity": "16:25:30"
   },
   {
     "_id": "166",
@@ -457,7 +637,11 @@
     "lastName": "Nguyễn",
     "email": "anthony.nguyen@gmail.com",
     "dob": "1998-09-10",
-    "role": "STUDENT"
+    "role": "STUDENT",
+    "loginId": "001234606",
+    "section": "S110",
+    "lastActivity": "2024-06-12T08:45:30Z",
+    "totalActivity": "14:10:15"
   },
   {
     "_id": "167",
@@ -467,7 +651,11 @@
     "lastName": "Gupta",
     "email": "vandit.gupta@gmail.com",
     "dob": "2000-11-01",
-    "role": "STUDENT"
+    "role": "STUDENT",
+    "loginId": "001234607",
+    "section": "S110",
+    "lastActivity": "2024-06-11T11:30:15Z",
+    "totalActivity": "17:55:30"
   },
   {
     "_id": "168",
@@ -477,7 +665,11 @@
     "lastName": "Chilson",
     "email": "kendra.chilson@gmail.com",
     "dob": "1999-06-30",
-    "role": "STUDENT"
+    "role": "STUDENT",
+    "loginId": "001234608",
+    "section": "S110",
+    "lastActivity": "2024-06-10T09:15:30Z",
+    "totalActivity": "15:40:15"
   },
   {
     "_id": "169",
@@ -487,7 +679,11 @@
     "lastName": "Smith",
     "email": "john.smith@gmail.com",
     "dob": "1972-09-22",
-    "role": "FACULTY"
+    "role": "FACULTY",
+    "loginId": "001234609",
+    "section": "F101",
+    "lastActivity": "2024-06-09T12:00:15Z",
+    "totalActivity": "18:25:30"
   },
   {
     "_id": "170",
@@ -497,7 +693,11 @@
     "lastName": "Reddy",
     "email": "arjun.reddy@gmail.com",
     "dob": "1975-03-01",
-    "role": "FACULTY"
+    "role": "FACULTY",
+    "loginId": "001234610",
+    "section": "F102",
+    "lastActivity": "2024-06-08T10:45:30Z",
+    "totalActivity": "16:10:15"
   },
   {
     "_id": "171",
@@ -507,7 +707,11 @@
     "lastName": "Johnson",
     "email": "david.johnson@gmail.com",
     "dob": "1967-07-15",
-    "role": "FACULTY"
+    "role": "FACULTY",
+    "loginId": "001234611",
+    "section": "F103",
+    "lastActivity": "2024-06-07T08:30:15Z",
+    "totalActivity": "14:55:30"
   },
   {
     "_id": "172",
@@ -517,7 +721,11 @@
     "lastName": "Kim",
     "email": "minjun.kim@gmail.com",
     "dob": "1969-12-18",
-    "role": "FACULTY"
+    "role": "FACULTY",
+    "loginId": "001234612",
+    "section": "F104",
+    "lastActivity": "2024-06-06T11:15:30Z",
+    "totalActivity": "21:41:13"
   },
   {
     "_id": "173",
@@ -527,6 +735,10 @@
     "lastName": "Brown",
     "email": "michael.brown@gmail.com",
     "dob": "1970-05-29",
-    "role": "FACULTY"
+    "role": "FACULTY",
+    "loginId": "001234613",
+    "section": "F105",
+    "lastActivity": "2024-06-05T09:00:15Z",
+    "totalActivity": "12:23:31"
   }
 ]
