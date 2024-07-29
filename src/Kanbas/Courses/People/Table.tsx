@@ -4,6 +4,28 @@ import profileIcon from "./user.png";
 
 export default function PeopleTable() {
   const [users, setUsers] = useState<any[]>([]);
+  const [role, setRole] = useState("");
+  const [name, setName] = useState("");
+
+  const filterUsersByRole = async (role: string) => {
+    setRole(role);
+    if (role) {
+      const users = await client.findUsersByRole(role);
+      setUsers(users);
+    } else {
+      fetchUsers();
+    }
+  };
+
+  const filterUsersByName = async (name: string) => {
+    setName(name);
+    if (name) {
+      const users = await client.findUsersByPartialName(name);
+      setUsers(users);
+    } else {
+      fetchUsers();
+    }
+  };
 
   const fetchUsers = async () => {
     const users = await client.findAllUsers();
@@ -16,6 +38,21 @@ export default function PeopleTable() {
 
   return (
     <div id="wd-people-table">
+      <input
+        onChange={(e) => filterUsersByName(e.target.value)}
+        placeholder="Search people"
+        className="form-control float-start w-25 me-2 wd-filter-by-name"
+      />
+      <select
+        value={role}
+        onChange={(e) => filterUsersByRole(e.target.value)}
+        className="form-select wd-select-role"
+        style={{ width: "200px" }}
+      >
+        <option value="">All Roles</option>
+        <option value="STUDENT">Students</option>
+        <option value="FACULTY">Faculty</option>
+      </select>
       <table className="table table-striped">
         <thead>
           <tr>
