@@ -1,5 +1,6 @@
 import React, { useState, useEffect } from "react";
 import * as client from "./client";
+import profileIcon from "./user.png";
 
 export default function PeopleTable() {
   const [users, setUsers] = useState<any[]>([]);
@@ -30,6 +31,12 @@ export default function PeopleTable() {
           {users.map((user: any) => (
             <tr key={user._id}>
               <td className="wd-full-name text-nowrap">
+                <img
+                  src={profileIcon}
+                  alt="Profile"
+                  className="profile-icon"
+                  style={{ width: "25px", height: "25px", marginRight: "8px" }}
+                />
                 <span className="wd-first-name">{user.firstName}</span>{" "}
                 <span className="wd-last-name">{user.lastName}</span>
               </td>
