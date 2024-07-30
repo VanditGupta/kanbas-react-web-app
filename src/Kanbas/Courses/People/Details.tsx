@@ -50,7 +50,7 @@ export default function PeopleDetails({
     if (uid) fetchUser();
   }, [uid]);
 
-  if (loading) return <div>Loading...</div>;
+  //   if (loading) return <div>Loading...</div>;
   if (!uid || !user) return null;
 
   return (
