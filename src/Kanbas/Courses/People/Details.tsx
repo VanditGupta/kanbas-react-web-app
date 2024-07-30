@@ -119,4 +119,4 @@ export default function PeopleDetails({
       </button>
     </div>
   );
-}
+} 
