@@ -1,6 +1,9 @@
+// Table.tsx
 import React, { useState, useEffect } from "react";
 import * as client from "./client";
 import profileIcon from "./user.png";
+import { Link } from "react-router-dom";
+import PeopleDetails from "./Details";
 
 export default function PeopleTable() {
   const [users, setUsers] = useState<any[]>([]);
@@ -59,6 +62,7 @@ export default function PeopleTable() {
             <th>Name</th>
             <th>Login ID</th>
             <th>Section</th>
+            <th>Course</th>
             <th>Role</th>
             <th>Last Activity</th>
             <th>Total Activity</th>
@@ -74,11 +78,16 @@ export default function PeopleTable() {
                   className="profile-icon"
                   style={{ width: "25px", height: "25px", marginRight: "8px" }}
                 />
-                <span className="wd-first-name">{user.firstName}</span>{" "}
-                <span className="wd-last-name">{user.lastName}</span>
+                <Link
+                  to={`/Kanbas/Courses/${user.courseId}/People/${user._id}`}
+                >
+                  <span className="wd-first-name">{user.firstName}</span>{" "}
+                  <span className="wd-last-name">{user.lastName}</span>
+                </Link>
               </td>
               <td className="wd-login-id">{user.loginId}</td>
               <td className="wd-section">{user.section}</td>
+              <td className="wd-course">{user.courseId}</td>
               <td className="wd-role">{user.role}</td>
               <td className="wd-last-activity">{user.lastActivity}</td>
               <td className="wd-total-activity">{user.totalActivity}</td>
@@ -86,6 +95,7 @@ export default function PeopleTable() {
           ))}
         </tbody>
       </table>
+      <PeopleDetails />
     </div>
   );
 }
