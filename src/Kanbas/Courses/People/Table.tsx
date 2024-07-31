@@ -1,4 +1,3 @@
-// Table.tsx
 import React, { useState, useEffect } from "react";
 import * as client from "./client";
 import profileIcon from "./user.png";
@@ -10,9 +9,9 @@ export default function PeopleTable() {
   const [users, setUsers] = useState<any[]>([]);
   const [role, setRole] = useState("");
   const [name, setName] = useState("");
+
   const createUser = async () => {
     const user = await client.createUser({
-      _id: `${Date.now()}`,
       username: `newuser${Date.now()}`,
       password: "password123",
       firstName: "New",
