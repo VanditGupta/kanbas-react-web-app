@@ -12,6 +12,11 @@ export default function Profile() {
     setProfile(account);
   };
 
+  const signout = async () => {
+    await client.signout();
+    navigate("/Kanbas/Account/Signin");
+  };
+
   useEffect(() => {
     fetchProfile();
   }, []);
@@ -111,6 +116,9 @@ export default function Profile() {
           </div>
         </div>
       )}
+      <button onClick={signout} className="wd-signout-btn btn btn-danger w-100">
+        Sign out
+      </button>
     </div>
   );
 }

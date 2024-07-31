@@ -15,14 +15,14 @@ export default function Signup() {
         value={user.username}
         onChange={(e) => setUser({ ...user, username: e.target.value })}
         className="wd-username form-control mb-2"
-        placeholder="username"
+        placeholder="Username"
       />
       <input
         value={user.password}
         onChange={(e) => setUser({ ...user, password: e.target.value })}
         type="password"
         className="wd-password form-control mb-2"
-        placeholder="password"
+        placeholder="Password"
       />
       <button onClick={signup} className="wd-signup-btn btn btn-primary mb-2">
         {" "}
